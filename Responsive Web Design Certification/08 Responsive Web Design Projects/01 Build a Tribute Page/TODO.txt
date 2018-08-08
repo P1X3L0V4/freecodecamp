@@ -1,4 +1,4 @@
-/*
+﻿/*
 TODO:
 
 Using Apple computers then and now was so intuitive because of her: Susan Kare 
@@ -9,7 +9,7 @@ Kare also developed the idea that the graphics should be easily readable symbols
 
 https://blog.prototypr.io/7-things-we-love-about-icon-designer-susan-kare-48c767cc8c1
 http://blogs.plos.org/neurotribes/2011/11/22/the-sketchbook-of-susan-kare-the-artist-who-gave-computing-a-human-face/
-
+http://steve-lovelace.com/susan-kare-design-hero/
 
 Light
 #F4F4F4
