@@ -36,12 +36,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #img-div {
     max-width: 460px;
-    padding: 2% 0;
+    padding: 0;
     text-align: center;
 }
 
 #image {
-    width: 100%;
+    max-width: 460px;
+    display: block;
 }
 
 #img-caption,
