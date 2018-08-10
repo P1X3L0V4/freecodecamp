@@ -9,8 +9,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
+h1 {
+    text-align: center;
+}
+
 #main {
-    /* border: 1px solid blue; */
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
@@ -32,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 #subtitle {
     color: #667788;
     font-size: 0.8em;
+    line-height: 1.6em;
     padding: 2vh 0;
     text-align: center;
 }
@@ -43,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #image {
-    max-width: 460px;
+    max-width: 100%;
     display: block;
 }
 
@@ -57,8 +61,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 10px;
 }
 
-.tribute_main {
-    padding: 4vh 0;
+#tribute-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0;
+}
+
+#tribute-info > * {
+    align-self: center;
 }
 
 #mac_icons {
@@ -69,6 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mac_icons img {
+    width: 100%;
+    max-width: 943px;
     align-self: center;
     display: block;
 }
@@ -81,17 +94,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tribute_text_left {
-    padding: 4vh 0 0 4vh;
+    flex: 3 1;
+    padding: 4%;
 }
 
 .tribute_text_right {
-    padding: 4vh 4vh 0 0;
+    flex: 3 1;
+    padding: 4%;
 }
 
 .img_blue,
 .img_green,
 .img_orange
 {
+    flex: 1 1;
     max-width: 277px;
     position: relative;
 }
@@ -130,13 +146,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #links {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 #tribute-link {
     align-self: center;
-    max-width: 700px;
+    text-align: center;
     border: 3px solid #111111;
     color: #111111;
     background-color: #FFFFFF;
@@ -151,20 +168,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sources {
-    padding-top: 6%;
+    width: 100%;
+    padding: 6% 4% 0 4%;
 }
 
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+    
+    #main > * {
+        padding: 2vh;
+    }
+
+    h3, h4 {
+        text-align: center;
+    }
+
     .tribute_left,
     .tribute_right
     {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .tribute_left > *,
-    .tribute_right > *
-    {
-        justify-self: center;
+    .tribute_right > * {
+        align-self: center;
     }
-} */
+
+    .img_blue,
+    .img_green,
+    .img_orange
+    {
+        margin-bottom: 6%;
+    }
+
+    .img_blue {
+        order: 1;
+    }
+
+    .trtxt01 {
+        order: 2;
+    }
+
+    .img_green {
+        order: 3;
+    }
+
+    .trtxt02 {
+        order: 4;
+    }
+
+    .img_orange {
+        order: 5;
+    }
+
+    .trtxt03 {
+        order: 6;
+    }
+
+}
