@@ -1,0 +1,21 @@
+body {
+    background-color: #67B8DE;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    margin: 2% auto;
+    padding: 2%;
+}
+
+.col-4 {
+    text-align: right;
+}
+
+#description {
+    text-align: center;
+}
