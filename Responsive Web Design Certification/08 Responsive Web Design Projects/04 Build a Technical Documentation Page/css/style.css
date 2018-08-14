@@ -1,0 +1,69 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-fluid, .row {
+    height: 100vh;
+}
+
+#column_left {
+    position: fixed;
+    width: 320px;
+    min-width: 260px;
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding: 4% 0 0 2%;
+}
+
+#navbar {
+    padding: 4%;
+    flex-flow: row nowrap;
+}
+
+#navbar header h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+#navbar h1 i {
+    font-size: 1.1em;
+    color: royalblue;
+    margin-right: 6px;
+}
+
+.links {
+    padding-top: 28px;
+}
+
+#column-right {
+    position: relative;
+    left: 320px;
+}
+
+#main-doc{
+    width: 96%;
+    position: relative;
+    left: 320px;
+    padding: 4%;
+}
+
+.main-section > header > hr {
+    padding-bottom: 2%;
+}
+
+.main-section > p {
+
+}
+
+pre {
+    width: 100%;
+    color: royalblue;;
+    background-color: #F8F9FA;
+    padding: 2%;
+}
+
+.pindent {
+    padding-left: 5%;
+}
