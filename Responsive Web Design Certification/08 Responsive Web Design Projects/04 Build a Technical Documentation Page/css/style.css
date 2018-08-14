@@ -7,16 +7,13 @@ body {
     height: 100vh;
 }
 
-#column_left {
+#navbar {
     position: fixed;
     width: 320px;
     min-width: 260px;
     height: 100vh;
     background-color: #F2F2F2;
     padding: 4% 0 0 2%;
-}
-
-#navbar {
     padding: 4%;
     flex-flow: row nowrap;
 }
@@ -37,13 +34,8 @@ body {
     padding-top: 28px;
 }
 
-#column-right {
-    position: relative;
-    left: 320px;
-}
-
 #main-doc{
-    width: 96%;
+    width: 100%;
     position: relative;
     left: 320px;
     padding: 4%;

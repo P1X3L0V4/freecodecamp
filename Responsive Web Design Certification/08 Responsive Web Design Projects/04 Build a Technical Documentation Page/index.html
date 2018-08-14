@@ -1,11 +1,5 @@
 <!--
 TODO:
-- main-section x5
-- ids for each header with underscores
-- main-sections >> p x10
-- main-sections >> code x5
-- main-sections >> li x5
-- navbar - a nav-link for each main-section
 - one media query
 -->
 
@@ -21,39 +15,36 @@ TODO:
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <div id="column_left">
-            <nav id="navbar">
-                <header>
-                    <h1><i class="fab fa-markdown"></i>DOC</h1>
-                    <div class="links">
-                        <a class="nav-link" href="#introduction">Introduction</a>
-                        <a class="nav-link" href="#headers">Headers</a>
-                        <a class="nav-link" href="#emphasis">Emphasis</a>
-                        <a class="nav-link" href="#lists">Lists</a>
-                        <a class="nav-link" href="#links">Links</a>
-                    </div>
-                </header>
-            </nav>
-        </div>
-        <div id="column_right">
-            <main id="main-doc">
-                <section class="main-section">
-                    <header id="introduction" class="display-4">Introduction</header>
-                    <hr>
-                    <p>
-                        This is intended as a quick reference and showcase. For more complete info, see John Gruber's
-                        original spec and the Github-flavored Markdown info page.
-                    </p>
-                    <p>
-                        Note that there is also a Cheatsheet specific to Markdown Here if that's what you're looking for.
-                        You can also check out more Markdown tools.
-                    </p>
-                </section>
-                <section class="main-section">
-                    <header id="headers" class="display-4">Headers</header>
-                    <hr>
+<div class="container-fluid d-flex">
+    <nav id="navbar">
+            <header>
+                <h1><i class="fab fa-markdown"></i>DOC</h1>
+                <div class="links">
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                    <a class="nav-link" href="#headers">Headers</a>
+                    <a class="nav-link" href="#emphasis">Emphasis</a>
+                    <a class="nav-link" href="#lists">Lists</a>
+                    <a class="nav-link" href="#links">Links</a>
+                    <a class="nav-link" href="#blockquotes">Blockquotes</a>
+                </div>
+            </header>
+        </nav>
+    <main id="main-doc">
+        <section class="main-section">
+            <header id="introduction" class="display-4">Introduction</header>
+            <hr>
+            <p>
+                This is intended as a quick reference and showcase. For more complete info, see John Gruber's
+                original spec and the Github-flavored Markdown info page.
+            </p>
+            <p>
+                Note that there is also a Cheatsheet specific to Markdown Here if that's what you're looking for.
+                You can also check out more Markdown tools.
+            </p>
+        </section>
+        <section class="main-section">
+            <header id="headers" class="display-4">Headers</header>
+            <hr>
 <pre><code>
 # H1
 ## H2
@@ -70,10 +61,10 @@ Alt-H1
 Alt-H2
 ------
 </code></pre>
-                </section>
-                <section class="main-section">
-                    <header id="emphasis" class="display-4">Emphasis</header>
-                    <hr>
+        </section>
+        <section class="main-section">
+            <header id="emphasis" class="display-4">Emphasis</header>
+            <hr>
 <pre><code>
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -84,26 +75,26 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 </code></pre>
 
-                    <p>
-                        Emphasis, aka italics, with <i>asterisks</i> or <i>underscores</i>.
-                    </p>
-                    <p>
-                        Strong emphasis, aka bold, with <b>asterisks</b> or <b>underscores</b>.
-                    </p>
-                    <p> 
-                        Combined emphasis with <b>asterisks and <i>underscores</i></b>.
-                    </p>
-                    <p> 
-                        Strikethrough uses two tildes. <del>Scratch this</del>.
-                    </p>
+            <p>
+                Emphasis, aka italics, with <i>asterisks</i> or <i>underscores</i>.
+            </p>
+            <p>
+                Strong emphasis, aka bold, with <b>asterisks</b> or <b>underscores</b>.
+            </p>
+            <p> 
+                Combined emphasis with <b>asterisks and <i>underscores</i></b>.
+            </p>
+            <p> 
+                Strikethrough uses two tildes. <del>Scratch this</del>.
+            </p>
 
-                </section>
-                <section class="main-section">
-                        <header id="lists" class="display-4">Lists</header>
-                        <hr>
-                        <p>
-                            (In this example, leading and trailing spaces are shown with with dots: ⋅)
-                        </p>
+        </section>
+        <section class="main-section">
+                <header id="lists" class="display-4">Lists</header>
+                <hr>
+                <p>
+                    (In this example, leading and trailing spaces are shown with with dots: ⋅)
+                </p>
 
 <pre><code>
 1. First ordered list item
@@ -123,43 +114,43 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 + Or pluses
 </code></pre>
-                    <p>
-                        <ol>
-                            <li>First ordered list item</li>
-                            <li>Another item
-                        </ol>
-                        <ul>
-                            <li>Unordered sub-list.</li>
-                        </ul>
-                        <ol>
-                            <li>Actual numbers don't matter, just that it's a number</li>
-                            <li>Ordered sub-list
-                            <li>And another item.
-                        </ol>
-                        <p class="pindent">
-                            You can have properly indented paragraphs within list items. Notice the blank line above,
-                            and the leading spaces (at least one, but we'll use three here to also align the raw
-                            Markdown).
-                        </p>
-                        <p class="pindent">
-                            To have a line break without a paragraph, you will need to use two trailing spaces.
-                            Note that this line is separate, but within the same paragraph.
-                            (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-                        </p>
-                        <ul>
-                            <li>Unordered list can use asterisks</li>
-                            <li>Or minuses</li>
-                            <li>Or pluses</li>
-                        </ul>
-                    </p>
+            <p>
+                <ol>
+                    <li>First ordered list item</li>
+                    <li>Another item
+                </ol>
+                <ul>
+                    <li>Unordered sub-list.</li>
+                </ul>
+                <ol>
+                    <li>Actual numbers don't matter, just that it's a number</li>
+                    <li>Ordered sub-list
+                    <li>And another item.
+                </ol>
+                <p class="pindent">
+                    You can have properly indented paragraphs within list items. Notice the blank line above,
+                    and the leading spaces (at least one, but we'll use three here to also align the raw
+                    Markdown).
+                </p>
+                <p class="pindent">
+                    To have a line break without a paragraph, you will need to use two trailing spaces.
+                    Note that this line is separate, but within the same paragraph.
+                    (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+                </p>
+                <ul>
+                    <li>Unordered list can use asterisks</li>
+                    <li>Or minuses</li>
+                    <li>Or pluses</li>
+                </ul>
+            </p>
 
-                    </section>
-                    <section class="main-section">
-                        <header id="links" class="display-4">Links</header>
-                        <hr>
-                        <p>
-                            There are two ways to create links.
-                        </p>
+            </section>
+            <section class="main-section">
+                <header id="links" class="display-4">Links</header>
+                <hr>
+                <p>
+                    There are two ways to create links.
+                </p>
 <pre><code>
 [I'm an inline-style link](https://www.google.com)
 
@@ -184,35 +175,58 @@ Some text to show that the reference links can follow later.
 [link text itself]: http://www.reddit.com
 </code></pre>
 
-                        <p>
-                            <a href="http://google.com">I'm an inline-style link</a>
-                        </p>
-                        <p>
-                            <a href="http://google.com" title="Google's Homepage">I'm an inline-style link with title</a>
-                        </p>
-                        <p>
-                            <a href="http://google.com">I'm a reference-style link</a>
-                        </p>
-                        <p>
-                            <a href="https://github.com/adam-p/markdown-here/blob/master/LICENSE">I'm a relative reference to a repository file</a>
-                        </p>
-                        <p>
-                            <a href="http://slashdot.org/">You can use numbers for reference-style link definitions</a>
-                        </p>
-                        <p>
-                            Or leave it empty and use the <a href="http://google.com"></a>link text itself.
-                        </p>
-                        <p>
-                            URLs and URLs in angle brackets will automatically get turned into links. <a
-                            href="http://google.com">http://www.example.com</a> or <a
-                            href="http://google.com">http://www.example.com</a> and sometimes example.com (but not on
-                            Github, for example).
-                        </p>
-                            Some text to show that the reference links can follow later.
-                        </p>
-                    </section>
-            </main>
-        </div>
+                <p>
+                    <a href="http://google.com">I'm an inline-style link</a>
+                </p>
+                <p>
+                    <a href="http://google.com" title="Google's Homepage">I'm an inline-style link with title</a>
+                </p>
+                <p>
+                    <a href="http://google.com">I'm a reference-style link</a>
+                </p>
+                <p>
+                    <a href="https://github.com/adam-p/markdown-here/blob/master/LICENSE">I'm a relative reference to a repository file</a>
+                </p>
+                <p>
+                    <a href="http://slashdot.org/">You can use numbers for reference-style link definitions</a>
+                </p>
+                <p>
+                    Or leave it empty and use the <a href="http://google.com"></a>link text itself.
+                </p>
+                <p>
+                    URLs and URLs in angle brackets will automatically get turned into links. <a
+                    href="http://google.com">http://www.example.com</a> or <a
+                    href="http://google.com">http://www.example.com</a> and sometimes example.com (but not on
+                    Github, for example).
+                </p>
+                    Some text to show that the reference links can follow later.
+                </p>
+            </section>
+            <section class="main-section">
+                <header id="introduction" class="display-4">Blockquotes</header>
+                <hr>
+<pre><code>
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+</code></pre>
+
+                <blockquote class="blockquote">
+                    Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
+                </blockquote>
+                <p>
+                    Quote break.
+                </p>
+                <blockquote class="blockquote">
+                    This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep
+                    writing to make sure this is long enough to actually wrap for everyone. Oh, you can put
+                    Markdown into a blockquote.
+                </blockquote>
+            </section>
+    </main>
     </div>
 </div>
 
