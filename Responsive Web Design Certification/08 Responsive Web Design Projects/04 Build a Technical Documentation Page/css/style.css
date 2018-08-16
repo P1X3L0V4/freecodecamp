@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     padding: 3%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #navbar header h1 {
