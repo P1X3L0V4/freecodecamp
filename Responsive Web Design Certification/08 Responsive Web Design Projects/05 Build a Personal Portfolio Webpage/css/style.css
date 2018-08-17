@@ -152,4 +152,8 @@ body {
     #welcome-texts h1 {
         font-size: x-large;
     }
+
+    .navbar-collapse {
+        text-align: center;
+    }
 }
