@@ -1,8 +1,5 @@
 <!--
 TODO:
-- 1x project with class="project-tile"
-- 1x link to project
-- navbar 1x #link
 - wherever 1x link id="profile-link" to profile github or FCC
 - 1x media query
 -->
@@ -15,6 +12,7 @@ TODO:
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -23,13 +21,13 @@ TODO:
     <div class="navbar-collapse collapse w-100">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#welcome-section">About me</a>
+                <a class="nav-link" href="#welcome-section">ABOUT ME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#projects">PROJECTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
             </li>
         </ul>
     </div>
@@ -37,15 +35,18 @@ TODO:
 
 <main class="container-fluid">
     <section id="welcome-section">
-        <img id="profilepic" src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534431756/%5BFCC%5D%20Personal%20Portfolio%20Webpage/annakarpinska.jpg">
-        <h1>Hello, I'm Anna!</h1>
-        <div class="role">Front-end Developer & Graphic Designer <br />form Warsaw, Poland</div>
-        <div id="social_icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-free-code-camp"></i> 
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-behance"></i>
+        <div id="welcome-texts">
+            <img id="profilepic" src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534431756/%5BFCC%5D%20Personal%20Portfolio%20Webpage/annakarpinska.jpg">
+            <h1>Anna Karpińska</h1>
+            <div class="role">@P1X3L0V4</div>
+            <div class="role">Front-end Developer & Graphic Designer</div>
+            <div id="social_icons">
+                <a id="profile-link" href="https://github.com/P1X3L0V4" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.freecodecamp.org/annakarpinska" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+                <a href="www.linkedin.com/in/P1X3L0V4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/P1X3L0V4" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.behance.net/annakarpinska" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
         </div>
     </section>
 
@@ -53,35 +54,32 @@ TODO:
         <h2>Projects</h2>
         <div id="tiles">
             <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
+                <a class="project-name" href="https://codepen.io/P1X3L0V4/full/YjdXvo/" target="_blank">
+                <img src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534509724/%5BFCC%5D%20Personal%20Portfolio%20Webpage/project01.jpg">
+                <br />Susan Kare Tribute Page</a>
             </div>
             <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
+                <a class="project-name" href="https://codepen.io/P1X3L0V4/full/MBxwgW/" target="_blank">
+                <img src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534509724/%5BFCC%5D%20Personal%20Portfolio%20Webpage/project02.jpg">
+                <br />Gaming Survey</a>
             </div>
             <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
+                <a class="project-name" href="https://codepen.io/P1X3L0V4/full/VBREWy/" target="_blank">
+                <img src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534509724/%5BFCC%5D%20Personal%20Portfolio%20Webpage/project03.jpg">
+                <br />Unified Remote Landing Page</a>
             </div>
             <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
-            </div>
-            <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
-            </div>
-            <div class="project-tile">
-                <img src="http://via.placeholder.com/350x150">
-                <br /><a class="project-name" href="#">Project</a>
+                <a class="project-name" href="https://codepen.io/P1X3L0V4/full/VBREWy/" target="_blank">
+                <img src="https://res.cloudinary.com/p1x3l0v4/image/upload/v1534509724/%5BFCC%5D%20Personal%20Portfolio%20Webpage/project04.jpg">
+                <br />Markdown Documentation Page</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div id="writeme">
-            Write me at hi@p1x3l0v4.studio
+            <h3>CONTACT ME</h3>
+            <a href="mailto:hi@p1x3l0v4.studio">HI@P1X3L0V4.STUDIO</a>
         </div>
     </section>
 </main>
