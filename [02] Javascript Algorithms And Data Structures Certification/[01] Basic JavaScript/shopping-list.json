@@ -1,0 +1,1 @@
+{"index.js":"var myList = [\n    [\"PC Games\", 10],\n    [\"PS4 Games\", 6],\n    [\"Xbox Games\", 3],\n    [\"Gamepads\", 4],\n    [\"Steam Accounts\", 1],\n];\n\n"}
