@@ -1,0 +1,1 @@
+{"index.js":"let username = \"JackOfAllTrades\";\nlet userCheck = /^[a-zA-Z][a-zA-Z]+[\\d]*$/; // Change this line\nlet result = userCheck.test(username);"}
