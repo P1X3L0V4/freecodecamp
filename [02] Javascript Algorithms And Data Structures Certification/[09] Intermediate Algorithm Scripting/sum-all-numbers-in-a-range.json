@@ -1,0 +1,1 @@
+{"index.js":"function sumAll(arr) {\n  let sum = 0;\n  if(arr[0] > arr[1]) {\n    for(let i = arr[1]; i < arr[0] + 1; i++) {\n      sum += i;\n    }\n  }\n  if(arr[0] < arr[1]) {\n    for(let y = arr[0]; y < arr[1] + 1; y++) {\n      sum += y;\n    }\n  }\n  return sum;\n}\n\nsumAll([1, 4]);"}
