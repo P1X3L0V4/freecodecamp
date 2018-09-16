@@ -1,0 +1,1 @@
+{"index.js":"function uniteUnique(arr) {\n  let unitedArr = [];\n  for(let i = 0; i < arguments.length; i++) {\n    for(let y = 0; y < arguments[i].length; y++) {\n      if(!unitedArr.includes(arguments[i][y])) {\n        unitedArr.push(arguments[i][y]);\n      }\n    }\n  }\n  return unitedArr;\n}\n\nuniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);"}
