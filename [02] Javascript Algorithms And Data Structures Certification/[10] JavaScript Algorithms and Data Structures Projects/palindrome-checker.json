@@ -1,0 +1,1 @@
+{"index.js":"function palindrome(str) {\n    // Remove all non-alphanumeric characters and turn to lower case\n    let cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();\n    // Create reversed string\n    let reversedStr = cleanStr.split(\"\").reverse().join(\"\");\n    // Compare strings\n    return cleanStr === reversedStr\n  }\n  \n  palindrome(\"eye\");"}
