@@ -1,0 +1,1 @@
+{"index.js":"function telephoneCheck(str) {\n    // Good luck!\n    let num11 = /^1(\\s?)(\\(\\d{3}\\)|\\d{3})(\\s?)(-?|\\(?)(\\d{3})(\\s?|-?)(\\d{4})$/;\n    let num10 = /^(\\d{3}|\\(\\d{3}\\))(\\s?|-?|\\(?)(\\d{3})(\\s?|-?)(\\d{4})$/;\n    return num10.test(str) || num11.test(str);\n  }\n  \n  telephoneCheck(\"555-555-5555\");"}
